@@ -6,7 +6,7 @@ export interface DecoderOptions extends DuplexOptions {
 }
 
 export interface EncoderOptions extends DuplexOptions {
-    readonly float;
+    readonly float?: boolean;
     readonly signed?: number;
     readonly bitDepth?: number;
     readonly channels?: number;
