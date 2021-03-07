@@ -11,6 +11,9 @@ export interface EncoderOptions extends DuplexOptions {
     readonly bitDepth?: number;
     readonly channels?: number;
     readonly sampleRate?: number;
+    readonly bitRate?: number;
+    readonly outSampleRate?: number;
+    readonly mode?: ChannelModes;
 }
 
 /**
@@ -32,7 +35,7 @@ export function Encoder(opts?: EncoderOptions): WriteStream;
 /*
  * Channel Modes
  */
-export enum ChannelModes {
+export const enum ChannelModes {
     STEREO,
     JOINTSTEREO,
     DUALCHANNEL,
