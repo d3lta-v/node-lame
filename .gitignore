@@ -3,6 +3,27 @@ build
 /node_modules
 /npm-debug.log
 
+### Ignore macOS specific metadata files
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
 # Ignore root level development test files
 /*.wav
 /*.mp3
